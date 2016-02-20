@@ -16,6 +16,8 @@
 @property (nonatomic, strong) NSString *money;
 /** 名称*/
 @property (nonatomic, strong) NSString *name;
+/** 数量*/
+@property (nonatomic, assign) NSInteger count;
 
 // 快速构造方法
 - (instancetype)initWithDict:(NSDictionary *)dict;

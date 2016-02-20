@@ -29,13 +29,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93a-iZ-4CX">
                                         <rect key="frame" x="54" y="12" width="17" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="1" green="0.056107677719999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lss-mU-4hR" userLabel="totalPriceLabel">
                                         <rect key="frame" x="71" y="12" width="11" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="1" green="0.056107677719999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUM-xI-4KE">
@@ -117,6 +117,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                     <state key="normal" title="+"/>
+                                                    <connections>
+                                                        <action selector="plusBtnClick" destination="Lwp-jb-pgq" eventType="touchUpInside" id="8K2-VY-7TY"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zD-9v-VMs" userLabel="countLabel">
                                                     <rect key="frame" x="515" y="28" width="35" height="35"/>
@@ -127,13 +130,16 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMj-1g-Re9" userLabel="minusBtn" customClass="LZCircleButton">
+                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMj-1g-Re9" userLabel="minusBtn" customClass="LZCircleButton">
                                                     <rect key="frame" x="475" y="28" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="hDR-Gw-sus"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                     <state key="normal" title="-"/>
+                                                    <connections>
+                                                        <action selector="minusBtnClick" destination="Lwp-jb-pgq" eventType="touchUpInside" id="8Ux-cf-uIi"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -158,7 +164,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="countLabel" destination="9zD-9v-VMs" id="Ba0-ul-SCx"/>
                                             <outlet property="imageImageView" destination="kSw-7g-TwA" id="SGk-nP-DPp"/>
+                                            <outlet property="minusBtn" destination="rMj-1g-Re9" id="de5-OD-Z82"/>
                                             <outlet property="moneyLabel" destination="VrH-7k-Hr9" id="lbl-rq-FU7"/>
                                             <outlet property="nameLabel" destination="YhB-HZ-vLN" id="4JS-Le-UWM"/>
                                         </connections>
@@ -182,6 +190,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="aOH-ni-KnW" id="xbP-58-HFs"/>
+                        <outlet property="totalPriceLabel" destination="lss-mU-4hR" id="3Eh-8R-dgO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
