@@ -140,6 +140,7 @@
 		180339F61C78998D00551587 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LZ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = m14a.cn;
 				TargetAttributes = {
