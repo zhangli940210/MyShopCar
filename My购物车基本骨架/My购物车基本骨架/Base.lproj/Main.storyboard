@@ -43,10 +43,16 @@
                                         <state key="normal" title="清空购物车">
                                             <color key="titleColor" red="1" green="0.056107677719999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="clear" destination="BYZ-38-t0r" eventType="touchUpInside" id="PyG-Lg-iRx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0c-Qk-E4Q">
                                         <rect key="frame" x="475" y="7" width="30" height="30"/>
                                         <state key="normal" title="购买"/>
+                                        <connections>
+                                            <action selector="buy" destination="BYZ-38-t0r" eventType="touchUpInside" id="UWc-T4-c1b"/>
+                                        </connections>
                                     </button>
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRZ-WX-XEP" userLabel="分割线">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
@@ -189,6 +195,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buyCount" destination="k0c-Qk-E4Q" id="ROu-gi-etv"/>
                         <outlet property="tableView" destination="aOH-ni-KnW" id="xbP-58-HFs"/>
                         <outlet property="totalPriceLabel" destination="lss-mU-4hR" id="3Eh-8R-dgO"/>
                     </connections>
