@@ -14,6 +14,8 @@
 		18033A201C789A4600551587 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18033A1A1C789A4600551587 /* ViewController.m */; };
 		18033A211C789A4600551587 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18033A1E1C789A4600551587 /* AppDelegate.m */; };
 		18033A231C789AFE00551587 /* wine.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18033A221C789AFE00551587 /* wine.plist */; };
+		18033A261C78A1E600551587 /* LZWine.m in Sources */ = {isa = PBXBuildFile; fileRef = 18033A251C78A1E600551587 /* LZWine.m */; };
+		18033A291C78A47E00551587 /* LZWineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18033A281C78A47E00551587 /* LZWineCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		18033A1D1C789A4600551587 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18033A1E1C789A4600551587 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18033A221C789AFE00551587 /* wine.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = wine.plist; sourceTree = "<group>"; };
+		18033A241C78A1E600551587 /* LZWine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZWine.h; sourceTree = "<group>"; };
+		18033A251C78A1E600551587 /* LZWine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZWine.m; sourceTree = "<group>"; };
+		18033A271C78A47E00551587 /* LZWineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZWineCell.h; sourceTree = "<group>"; };
+		18033A281C78A47E00551587 /* LZWineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZWineCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 		18033A1B1C789A4600551587 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18033A241C78A1E600551587 /* LZWine.h */,
+				18033A251C78A1E600551587 /* LZWine.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +118,8 @@
 		18033A1F1C789A4600551587 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18033A271C78A47E00551587 /* LZWineCell.h */,
+				18033A281C78A47E00551587 /* LZWineCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,8 +196,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18033A261C78A1E600551587 /* LZWine.m in Sources */,
 				18033A201C789A4600551587 /* ViewController.m in Sources */,
 				18033A031C78998D00551587 /* main.m in Sources */,
+				18033A291C78A47E00551587 /* LZWineCell.m in Sources */,
 				18033A211C789A4600551587 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
