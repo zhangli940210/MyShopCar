@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		18033A031C78998D00551587 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18033A021C78998D00551587 /* main.m */; };
-		18033A061C78998D00551587 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18033A051C78998D00551587 /* AppDelegate.m */; };
-		18033A091C78998D00551587 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18033A081C78998D00551587 /* ViewController.m */; };
 		18033A0C1C78998D00551587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18033A0A1C78998D00551587 /* Main.storyboard */; };
 		18033A0E1C78998D00551587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18033A0D1C78998D00551587 /* Assets.xcassets */; };
 		18033A111C78998D00551587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18033A0F1C78998D00551587 /* LaunchScreen.storyboard */; };
+		18033A201C789A4600551587 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18033A1A1C789A4600551587 /* ViewController.m */; };
+		18033A211C789A4600551587 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18033A1E1C789A4600551587 /* AppDelegate.m */; };
+		18033A231C789AFE00551587 /* wine.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18033A221C789AFE00551587 /* wine.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		180339FE1C78998D00551587 /* My购物车基本骨架.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My购物车基本骨架.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18033A021C78998D00551587 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		18033A041C78998D00551587 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		18033A051C78998D00551587 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18033A071C78998D00551587 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18033A081C78998D00551587 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18033A0B1C78998D00551587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18033A0D1C78998D00551587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18033A101C78998D00551587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18033A121C78998D00551587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18033A191C789A4600551587 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18033A1A1C789A4600551587 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18033A1D1C789A4600551587 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18033A1E1C789A4600551587 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18033A221C789AFE00551587 /* wine.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = wine.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +60,12 @@
 		18033A001C78998D00551587 /* My购物车基本骨架 */ = {
 			isa = PBXGroup;
 			children = (
-				18033A041C78998D00551587 /* AppDelegate.h */,
-				18033A051C78998D00551587 /* AppDelegate.m */,
-				18033A071C78998D00551587 /* ViewController.h */,
-				18033A081C78998D00551587 /* ViewController.m */,
+				18033A181C789A4600551587 /* Controller */,
+				18033A1B1C789A4600551587 /* Model */,
+				18033A1C1C789A4600551587 /* Others */,
+				18033A1F1C789A4600551587 /* View */,
 				18033A0A1C78998D00551587 /* Main.storyboard */,
 				18033A0D1C78998D00551587 /* Assets.xcassets */,
-				18033A0F1C78998D00551587 /* LaunchScreen.storyboard */,
-				18033A121C78998D00551587 /* Info.plist */,
 				18033A011C78998D00551587 /* Supporting Files */,
 			);
 			path = "My购物车基本骨架";
@@ -74,9 +74,44 @@
 		18033A011C78998D00551587 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18033A221C789AFE00551587 /* wine.plist */,
+				18033A0F1C78998D00551587 /* LaunchScreen.storyboard */,
+				18033A121C78998D00551587 /* Info.plist */,
 				18033A021C78998D00551587 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18033A181C789A4600551587 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18033A191C789A4600551587 /* ViewController.h */,
+				18033A1A1C789A4600551587 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18033A1B1C789A4600551587 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18033A1C1C789A4600551587 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				18033A1D1C789A4600551587 /* AppDelegate.h */,
+				18033A1E1C789A4600551587 /* AppDelegate.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		18033A1F1C789A4600551587 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +174,7 @@
 				18033A111C78998D00551587 /* LaunchScreen.storyboard in Resources */,
 				18033A0E1C78998D00551587 /* Assets.xcassets in Resources */,
 				18033A0C1C78998D00551587 /* Main.storyboard in Resources */,
+				18033A231C789AFE00551587 /* wine.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18033A091C78998D00551587 /* ViewController.m in Sources */,
-				18033A061C78998D00551587 /* AppDelegate.m in Sources */,
+				18033A201C789A4600551587 /* ViewController.m in Sources */,
 				18033A031C78998D00551587 /* main.m in Sources */,
+				18033A211C789A4600551587 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
